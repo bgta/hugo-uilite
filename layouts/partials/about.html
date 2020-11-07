@@ -1,0 +1,8 @@
+{{ $about := .Site.Data.about }}
+
+<section id="about" class="bg-light">
+      <h2 class="heading">About me</h2>
+      {{ range $index, $item := $about.items }}
+      <p>{{ $item | safeHTML }}</p>
+      {{ end}}
+</section>

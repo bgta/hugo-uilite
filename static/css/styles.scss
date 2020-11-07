@@ -2,9 +2,10 @@
   // outline: 1px solid red;
 }
 
-html{
+html {
   overflow-x: hidden;
-  overflow-y: scroll; 
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 a{
@@ -202,6 +203,7 @@ h1,h2,h3,h4,h5,h6{
 
 section{
   padding: 10%;
+  min-height: 100vh;
   
   .heading{
     margin-bottom: 30px;

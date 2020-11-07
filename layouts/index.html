@@ -2,8 +2,9 @@
 {{ partial "sidebar.html" . }}
 
 <div class="main-content">
-	{{ if .Site.Data.skills }}{{ partial "skills.html" . }}{{ end }}
+	{{ partial "about.html" . }}		
 	{{ if .Site.Data.experience }}{{ partial "experience.html" . }}{{ end }}
+	{{ if .Site.Data.skills }}{{ partial "skills.html" . }}{{ end }}
 	{{ if .Site.Data.services }}{{ partial "services.html" . }}{{ end }}
 </div>
 
@@ -12,9 +13,11 @@
 	{{ if gt (len (where .Data.Pages "Type" "work")) 0 }}{{ partial "work.html" . }}{{ end }}
 </div>
 
+{{ if .Site.Data.config.contact }}
 <div class="main-content">
 	{{ partial "contact.html" . }}		
-</div>
+</div>	
+{{ end }}}}
 
 {{ partial "footer-scripts.html" . }}
 	
