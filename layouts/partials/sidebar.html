@@ -26,12 +26,10 @@
 
     </div>
 
-    <div class="social my-4">
-      <a href="#about">#About</a>
-      {{ if .Site.Data.experience }}<a href="#experience">#Experience</a>{{ end }}
-      {{ if .Site.Data.skills }}<a href="#skills">#Skills</a>{{ end }}
-      {{ if .Site.Data.config.contact }}<a href="#contact">#Contact</a>{{ end}}
-    </div>
+    <a href="#about" class="btn btn-dark">About</a>
+    {{ if .Site.Data.experience }}<a href="#experience" class="btn btn-dark">#Experience</a>{{ end }}
+    {{ if .Site.Data.skills }}<a href="#skills" class="btn btn-dark">Skills</a>{{ end }}
+    {{ if .Site.Data.config.contact }}<a href="#contact" class="btn btn-dark">Contact</a>{{ end }}
 
 
   </div>
