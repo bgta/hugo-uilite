@@ -26,24 +26,5 @@
 
     </div>
 
-    <!--a href="#about" class="btn btn-dark">About</a>
-    {{ if .Site.Data.experience }}<a href="#experience" class="btn btn-dark">#Experience</a>{{ end }}
-    {{ if .Site.Data.skills }}<a href="#skills" class="btn btn-dark">Skills</a>{{ end }}
-    {{ if .Site.Data.config.contact }}<a href="#contact" class="btn btn-dark">Contact</a>{{ end }}-->
-
-    <nav class="navbar navbar-expand-md fixed-top navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
-          {{ if .Site.Data.experience }}<a class="nav-item nav-link" href="#experience">Experience</a>{{ end }}
-          {{ if .Site.Data.skills }}<a class="nav-item nav-link" href="#skills">Skills</a>{{ end }}
-          {{ if .Site.Data.config.contact }}<a class="nav-item nav-link" href="#contact">Contact</a>{{ end }}
-        </div>
-      </div>
-    </nav>
-
   </div>
 </section>
