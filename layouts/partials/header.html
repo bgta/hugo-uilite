@@ -45,10 +45,10 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		  <div class="navbar-nav">
-			<a class="nav-item nav-link active" data-toggle="collapse" href="#about">About <span class="sr-only">(current)</span></a>
-			{{ if .Site.Data.experience }}<a class="nav-item nav-link" data-toggle="collapse" href="#experience">Experience</a>{{ end }}
-			{{ if .Site.Data.skills }}<a class="nav-item nav-link" data-toggle="collapse" href="#skills">Skills</a>{{ end }}
-			{{ if .Site.Data.config.contact }}<a class="nav-item nav-link" data-toggle="collapse" href="#contact">Contact</a>{{ end }}
+			<a class="nav-item nav-link" href="#about" onclick="$('#navbarNavAltMarkup').collapse('hide');">About</a>
+			{{ if .Site.Data.experience }}<a class="nav-item nav-link" href="#experience" onclick="$('#navbarNavAltMarkup').collapse('hide');">Experience</a>{{ end }}
+			{{ if .Site.Data.skills }}<a class="nav-item nav-link" href="#skills" onclick="$('#navbarNavAltMarkup').collapse('hide');">Skills</a>{{ end }}
+			{{ if .Site.Data.config.contact }}<a class="nav-item nav-link" href="#contact" onclick="$('#navbarNavAltMarkup').collapse('hide');">Contact</a>{{ end }}
 		  </div>
 		</div>
 	  </nav>
