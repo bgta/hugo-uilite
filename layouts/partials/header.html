@@ -39,12 +39,14 @@
 
 </head>
 <body class="clearfix">
+	<a name="#top"></a>
 	<nav class="navbar navbar-expand-md fixed-top navbar-light">
-		<button class="navbar-toggler  bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		  <div class="navbar-nav">
+			<a class="nav-item nav-link d-lg-none" href="#top" onclick="$('#navbarNavAltMarkup').collapse('hide');">Home</a>  
 			<a class="nav-item nav-link" href="#about" onclick="$('#navbarNavAltMarkup').collapse('hide');">About</a>
 			{{ if .Site.Data.experience }}<a class="nav-item nav-link" href="#experience" onclick="$('#navbarNavAltMarkup').collapse('hide');">Experience</a>{{ end }}
 			{{ if .Site.Data.skills }}<a class="nav-item nav-link" href="#skills" onclick="$('#navbarNavAltMarkup').collapse('hide');">Skills</a>{{ end }}
