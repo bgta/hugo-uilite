@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+
+{{ partial "sidebar.html" . }}
+
+<div class="main-content">
+
+    <section id="about" class="blue">
+      <span class="heading"><a href="/">Home</a> &gt; {{ .Title}}</span>
+
+        <ul id="list" class="pl0">
+            <!-- prettier-ignore -->
+            {{ range .Data.Pages.ByDate.Reverse }}
+            <li class="list pl0 lh-copy">
+              <a
+                class="f3 b dib black no-underline"
+                href="{{ .Permalink}}"
+                >{{ .Title }}</a
+              >
+              <span
+                class="f6 gray db dib-ns"
+                >{{ .Date.Format "January 2, 2006" }}</span
+              >
+            </li>
+            <!-- prettier-ignore -->
+            {{ end }}
+          </ul>
+    </section>
+</div>
+
+{{ partial "footer-scripts.html" . }}

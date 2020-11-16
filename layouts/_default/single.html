@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
+
+<div class="main-content">
+
+    <section id="about" class="blue">
+        <span class="heading" itemprop="name" id="title"><a href="/">Home</a> &gt; <a href="/posts/">Posts</a> &gt; {{ .Title}}</span>
+
+        <article itemprop="articleBody" id="content">
+            {{ .Content }}
+        </article>
+        
+    </section>
+</div>
+
+{{ partial "footer-scripts.html" . }}
